@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ебать как важный файл</title>
+    <style>
+      /* Общий фон страницы и центрирование */
+      body {
+        font-family: "Comic Sans MS", "Chalkboard SE", "Segoe UI", sans-serif;
+        background-color: #f0f7ff; /* Нежно-голубой детский фон */
+        margin: 0;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+      }
+
+      /* Большие блоки для каждого человека */
+      div[style*="display: flex"] {
+        /* Перестраиваем в столбик, чтобы картинка была сверху, а имя снизу */
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center;
+
+        /* Размеры карточки */
+        width: 90% !important;
+        max-width: 500px; /* Карточки будут большими и заметными */
+
+        /* Красивое детское оформление */
+        background: #ffffff;
+        padding: 25px;
+        border-radius: 24px; /* Сильно скругленные безопасные углы */
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); /* Мягкая тень */
+        border: 4px solid #ffd166; /* Яркая желтая рамочка */
+        box-sizing: border-box;
+        transition: transform 0.2s ease;
+      }
+
+      /* Легкое увеличение при клике/наведении */
+      div[style*="display: flex"]:hover {
+        transform: scale(1.02);
+      }
+
+      /* Огромные фотографии */
+      div[style*="display: flex"] img {
+        width: 100%; /* Фото займет всю ширину карточки */
+        height: auto;
+        max-height: 450px; /* Ограничение по высоте, чтобы не растягивалось слишком сильно */
+        object-fit: cover; /* Фотографии аккуратно подгоняются без искажений */
+        border-radius: 16px; /* Скругленные углы у фото */
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Крупные, читаемые имена */
+      div[style*="display: flex"] h2 {
+        margin: 20px 0 0 0;
+        font-size: 2.5rem; /* Очень крупный шрифт */
+        color: #073b4c; /* Темно-синий мягкий цвет для текста */
+        text-align: center;
+        letter-spacing: 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="display: flex; width: 100%">
+      <img src="image/photo_5235750170065051182_y.jpg" />
+      <h2>Валик</h2>
+    </div>
+    <div style="display: flex; width: 100%">
+      <img src="image/photo_5235750170065051188_y.jpg" />
+      <h2>Юлька</h2>
+    </div>
+    <div style="display: flex; width: 100%">
+      <img src="image/photo_5235750170065051186_y.jpg" />
+      <h2>Полина</h2>
+    </div>
+    <div style="display: flex; width: 100%">
+      <img src="image/photo_5235750170065051185_y.jpg" />
+      <h2>Денис</h2>
+    </div>
+    <div style="display: flex; width: 100%">
+      <img src="image/photo_5235750170065051184_y.jpg" />
+      <h2>Илья</h2>
+    </div>
+    <div style="display: flex; width: 100%">
+      <img src="image/photo_5235750170065051187_y.jpg" />
+      <h2>Арсений</h2>
+    </div>
+    <div style="display: flex; width: 100%">
+      <img src="image/photo_5237764947813540328_y.jpg" />
+      <h2>Ваня</h2>
+    </div>
+    <div style="display: flex; width: 100%">
+      <img src="image/photo_5235750170065051183_y.jpg" />
+      <h2>Рома</h2>
+    </div>
+  </body>
+</html>
